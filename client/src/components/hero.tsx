@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="mb-8">
             {/* Professional Avatar */}
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-accent mx-auto mb-6 flex items-center justify-center overflow-hidden">
-              <img src={"/src/resources/LinkedInProfilePicture.png"} alt="Profile" className="w-full h-full object-cover rounded-full" />
+              <img src={process.env.PUBLIC_URL + "/src/resources/LinkedInProfilePicture.png"} alt="Profile" className="w-full h-full object-cover rounded-full" />
             </div>
           </div>
 
