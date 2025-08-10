@@ -49,9 +49,12 @@ const Hero = () => {
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 font-semibold flex items-center gap-2"
               data-testid="button-download-cv"
+              asChild
             >
-              <Download className="w-4 h-4" />
-              Download CV
+              <a href="/cv/resources/CV+%20Fahad.pdf" download>
+                <Download className="w-4 h-4" />
+                Download CV
+              </a>
             </Button>
           </div>
 

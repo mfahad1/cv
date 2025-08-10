@@ -22,6 +22,10 @@ export default defineConfig({
         {
           src: path.resolve(import.meta.dirname, "client", "src", "resources", "LinkedInProfilePicture.png"),
           dest: "resources"
+        },
+        {
+          src: path.resolve(import.meta.dirname, "client", "src", "resources", "CV+ Fahad.pdf"),
+          dest: "resources"
         }
       ]
     })
