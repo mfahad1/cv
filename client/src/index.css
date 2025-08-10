@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210, 17%, 98%);
+  --foreground: hsl(210, 15%, 20%);
+  --card: hsl(210, 17%, 98%);
+  --card-foreground: hsl(210, 15%, 20%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 15%, 20%);
+  --primary: hsl(220, 77%, 42%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(215, 16%, 47%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(217, 33%, 97%);
+  --muted-foreground: hsl(215, 15%, 40%);
+  --accent: hsl(187, 85%, 43%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(220, 77%, 42%);
+  --chart-1: hsl(220, 77%, 42%);
+  --chart-2: hsl(187, 85%, 43%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 78%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(210, 17%, 98%);
+  --sidebar-foreground: hsl(210, 15%, 20%);
+  --sidebar-primary: hsl(220, 77%, 42%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(217, 33%, 97%);
+  --sidebar-accent-foreground: hsl(220, 77%, 42%);
+  --sidebar-border: hsl(214, 32%, 91%);
+  --sidebar-ring: hsl(220, 77%, 42%);
+  --skill-ai-bg: #fef9c3; /* Light yellow for AI/ML & LLM Integration */
+  --skill-ai-fg: #92400e; /* Dark amber for text */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(210, 11%, 9%);
+  --foreground: hsl(210, 17%, 92%); /* Brighter font color for dark mode */
+  --card: hsl(210, 11%, 10%);
+  --card-foreground: hsl(210, 17%, 92%); /* Brighter font color for dark mode */
+  --popover: hsl(210, 11%, 9%);
+  --popover-foreground: hsl(210, 17%, 92%); /* Brighter font color for dark mode */
+  --primary: hsl(220, 77%, 62%); /* Brighter primary color */
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 17%, 95%);
+  --secondary-foreground: hsl(210, 17%, 20%);
+  --muted: hsl(210, 11%, 15%);
+  --muted-foreground: hsl(215, 13%, 75%); /* Brighter muted font color */
+  --accent: hsl(187, 70%, 18%); /* Brighter accent */
+  --accent-foreground: hsl(187, 85%, 62%); /* Brighter accent foreground */
+  --destructive: hsl(0, 84%, 65%); /* Brighter destructive */
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 11%, 25%); /* Brighter border */
+  --input: hsl(210, 16%, 28%); /* Brighter input */
+  --ring: hsl(220, 77%, 62%); /* Brighter ring */
+  --chart-1: hsl(220, 77%, 62%);
+  --chart-2: hsl(187, 85%, 46%);
+  --chart-3: hsl(42, 93%, 66%);
+  --chart-4: hsl(147, 78%, 52%);
+  --chart-5: hsl(341, 75%, 61%);
+  --sidebar: hsl(210, 11%, 20%); /* Brighter sidebar */
+  --sidebar-foreground: hsl(210, 17%, 92%); /* Brighter sidebar font color */
+  --sidebar-primary: hsl(220, 77%, 62%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(187, 70%, 18%);
+  --sidebar-accent-foreground: hsl(187, 85%, 62%);
+  --sidebar-border: hsl(210, 11%, 36%); /* Brighter sidebar border */
+  --sidebar-ring: hsl(220, 77%, 62%);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-muted-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors;
+  }
+  
+  .skill-tag {
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .tech-tag {
+    @apply px-2 py-1 bg-muted text-muted-foreground text-xs rounded;
+  }
+
+  .skill-tag-ai {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+    border: 1px solid var(--border);
+  }
+}

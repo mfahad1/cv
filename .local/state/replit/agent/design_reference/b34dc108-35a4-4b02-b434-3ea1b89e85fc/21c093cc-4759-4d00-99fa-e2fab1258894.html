@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Fahad Azhar - Senior Full-Stack & AI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#64748b',
+                        accent: '#06b6d4',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            },
+            darkMode: 'class',
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-inter bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm z-50 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">Muhammad Fahad Azhar</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                        <i class="fas fa-sun dark:hidden"></i>
+                        <i class="fas fa-moon hidden dark:inline"></i>
+                    </button>
+                    
+                    <!-- Mobile menu button -->
+                    <button class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-800">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <div class="mb-8">
+                    <!-- Professional Avatar Placeholder -->
+                    <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-accent mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-4xl text-white"></i>
+                    </div>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                    <span class="text-primary">Muhammad Fahad Azhar</span>
+                </h1>
+                
+                <h2 class="text-xl sm:text-2xl lg:text-3xl text-secondary dark:text-slate-400 mb-8">
+                    Senior Full-Stack & AI Engineer
+                </h2>
+                
+                <p class="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+                    Senior Software Engineer with 8+ years of experience delivering scalable, secure, and high-performance web and mobile applications for clients across the USA, Australia, Germany, and beyond. Specialized in React, React Native, Node.js, Python, AWS, and AI/ML integrations.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <a href="#contact" class="bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center gap-2">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#" class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center gap-2">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:mfahadaz1@gmail.com" class="text-secondary hover:text-primary transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="tel:+14376604498" class="text-secondary hover:text-primary transition-colors">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-primary transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-primary transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Professional Summary</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                        I'm a passionate Senior Full-Stack & AI Engineer with expertise in building scalable applications and integrating cutting-edge AI technologies. My experience spans across multiple domains including event management, social media analytics, and enterprise solutions.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+                        Expert in LLM integration (LLaMA, DeepSeek, GPT APIs), RAG pipelines, fine-tuning models, and cloud-native architectures. Adept at collaborating with cross-functional teams, leading development efforts, and delivering mission-critical solutions.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-2xl font-bold text-primary">8+</div>
+                            <div class="text-sm text-secondary">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-primary">50K+</div>
+                            <div class="text-sm text-secondary">MAU Applications</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-primary">15+</div>
+                            <div class="text-sm text-secondary">Major Projects</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-primary">4</div>
+                            <div class="text-sm text-secondary">Countries Served</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:pl-8">
+                    <h3 class="text-2xl font-semibold mb-6">Core Expertise</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="fas fa-code text-primary text-sm"></i>
+                            </div>
+                            <span class="font-medium">Full-Stack Development (React, Node.js, Python)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
+                                <i class="fas fa-brain text-accent text-sm"></i>
+                            </div>
+                            <span class="font-medium">AI/ML Integration & LLM Implementation</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-emerald-100 dark:bg-emerald-900/30 rounded-full flex items-center justify-center">
+                                <i class="fas fa-cloud text-emerald-600 text-sm"></i>
+                            </div>
+                            <span class="font-medium">Cloud Architecture (AWS, Docker, Kubernetes)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-orange-600 text-sm"></i>
+                            </div>
+                            <span class="font-medium">Mobile Development (React Native, Ionic)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Technical Skills</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                    Comprehensive expertise across modern web technologies, AI/ML frameworks, and cloud platforms
+                </p>
+            </div>
+            
+            <div class="grid gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-paint-brush text-primary"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">React</span>
+                        <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">React Native</span>
+                        <span class="skill-tag bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">AngularJS</span>
+                        <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">Next.js</span>
+                        <span class="skill-tag bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">Redux</span>
+                        <span class="skill-tag bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">Ionic</span>
+                        <span class="skill-tag bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Material UI</span>
+                        <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">Ant Design</span>
+                        <span class="skill-tag bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">Bootstrap</span>
+                        <span class="skill-tag bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-300">SASS</span>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-server text-emerald-600"></i>
+                        Backend Development
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Node.js</span>
+                        <span class="skill-tag bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">Express</span>
+                        <span class="skill-tag bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">NestJS</span>
+                        <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">Python</span>
+                        <span class="skill-tag bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">Flask</span>
+                        <span class="skill-tag bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Django</span>
+                        <span class="skill-tag bg-teal-100 text-teal-800 dark:bg-teal-900/30 dark:text-teal-300">FastAPI</span>
+                        <span class="skill-tag bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-300">GraphQL</span>
+                        <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML Skills -->
+                <div class="bg-gradient-to-r from-accent/5 to-primary/5 dark:from-accent/10 dark:to-primary/10 rounded-xl p-8 shadow-sm border border-accent/20">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-brain text-accent"></i>
+                        AI/ML & LLM Integration
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">GPT API Integration</span>
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">LLaMA</span>
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">DeepSeek</span>
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">LangGraph</span>
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">RAG Pipelines</span>
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">Fine-tuning LLMs</span>
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">MCP Integration</span>
+                        <span class="skill-tag bg-accent/20 text-accent-800 dark:bg-accent/30 dark:text-accent-200">Embedding Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- Database & Cloud -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm border border-slate-200 dark:border-slate-700">
+                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                            <i class="fas fa-database text-orange-600"></i>
+                            Databases
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">PostgreSQL</span>
+                            <span class="skill-tag bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">MySQL</span>
+                            <span class="skill-tag bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">MongoDB</span>
+                            <span class="skill-tag bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">DynamoDB</span>
+                            <span class="skill-tag bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">Redis</span>
+                            <span class="skill-tag bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">Pinecone</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm border border-slate-200 dark:border-slate-700">
+                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                            <i class="fas fa-cloud text-blue-500"></i>
+                            Cloud & DevOps
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-tag bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">AWS</span>
+                            <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">Docker</span>
+                            <span class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">Kubernetes</span>
+                            <span class="skill-tag bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">Jenkins</span>
+                            <span class="skill-tag bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Nginx</span>
+                            <span class="skill-tag bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Professional Experience</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                    8+ years of progressive experience across multiple industries and technologies
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-0.5 w-0.5 h-full bg-slate-300 dark:bg-slate-600"></div>
+                
+                <div class="space-y-12">
+                    <!-- EventMobi -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-slate-800"></div>
+                        <div class="ml-12 md:ml-0 md:w-5/12 md:text-right md:pr-8">
+                            <div class="bg-slate-50 dark:bg-slate-700 rounded-lg p-6">
+                                <div class="text-sm text-accent font-semibold mb-1">Nov 2020 – Present</div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Senior Software Engineer</h3>
+                                <div class="text-primary font-semibold mb-4">EventMobi</div>
+                                <ul class="text-slate-600 dark:text-slate-300 space-y-2 text-sm">
+                                    <li>• Lead frontend development for large-scale event management platforms using ReactJS and Ionic</li>
+                                    <li>• Integrated real-time features and optimized performance for high-traffic events</li>
+                                    <li>• Collaborated directly with clients to refine requirements and deliver tailored solutions</li>
+                                    <li>• Implemented AI-driven features for event personalization and analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                    </div>
+
+                    <!-- 10Pearls -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-slate-800"></div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                        <div class="ml-12 md:ml-0 md:w-5/12 md:pl-8">
+                            <div class="bg-slate-50 dark:bg-slate-700 rounded-lg p-6">
+                                <div class="text-sm text-accent font-semibold mb-1">Oct 2017 – Nov 2020</div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Senior Software Engineer</h3>
+                                <div class="text-primary font-semibold mb-4">10Pearls</div>
+                                <ul class="text-slate-600 dark:text-slate-300 space-y-2 text-sm">
+                                    <li>• Migrated legacy systems to ReactJS, improving performance by 2x</li>
+                                    <li>• Designed microservice-based architectures for social media monitoring and jail management systems</li>
+                                    <li>• Led a cross-border team of 3 developers, ensuring timely delivery of mission-critical features</li>
+                                    <li>• Integrated AI-powered analytics for social media sentiment tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VentureDive -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-slate-800"></div>
+                        <div class="ml-12 md:ml-0 md:w-5/12 md:text-right md:pr-8">
+                            <div class="bg-slate-50 dark:bg-slate-700 rounded-lg p-6">
+                                <div class="text-sm text-accent font-semibold mb-1">Feb 2017 – Oct 2017</div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Software Engineer</h3>
+                                <div class="text-primary font-semibold mb-4">VentureDive</div>
+                                <ul class="text-slate-600 dark:text-slate-300 space-y-2 text-sm">
+                                    <li>• Introduced unit/integration testing strategies, reducing recurring bugs by 15%</li>
+                                    <li>• Guided developers on modern JavaScript trends and best practices</li>
+                                    <li>• Collaborated with clients to design optimal technical solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                    </div>
+
+                    <!-- Codenvoi -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-slate-800"></div>
+                        <div class="hidden md:block md:w-5/12"></div>
+                        <div class="ml-12 md:ml-0 md:w-5/12 md:pl-8">
+                            <div class="bg-slate-50 dark:bg-slate-700 rounded-lg p-6">
+                                <div class="text-sm text-accent font-semibold mb-1">Sep 2014 – Dec 2016</div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Software Engineer / Co-Founder</h3>
+                                <div class="text-primary font-semibold mb-4">Codenvoi</div>
+                                <ul class="text-slate-600 dark:text-slate-300 space-y-2 text-sm">
+                                    <li>• Managed client projects end-to-end, from requirements to deployment</li>
+                                    <li>• Trained interns in JavaScript and modern web development</li>
+                                    <li>• Delivered multiple React and Node.js-based applications for international clients</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Featured Projects</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                    Showcasing impactful solutions across AI/ML, enterprise systems, and scalable applications
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- AI-Powered Customer Service Platform -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-accent to-primary p-6">
+                        <i class="fas fa-brain text-3xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">AI-Powered Customer Service Platform</h3>
+                        <p class="text-blue-100">Advanced AI integration for real-time customer support</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="text-slate-600 dark:text-slate-300 space-y-2 mb-6">
+                            <li>• Integrated GPT APIs and on-device AI into React Native app</li>
+                            <li>• Built automated RAG pipelines with recursive fine-tuning</li>
+                            <li>• Used MCP to connect AI with existing app functionalities</li>
+                            <li>• Triggered by database updates for continuous improvement</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">GPT API</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">MCP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Monitoring -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-6">
+                        <i class="fas fa-chart-line text-3xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Social Media Monitoring Platform</h3>
+                        <p class="text-purple-100">Real-time analytics for multiple social media accounts</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="text-slate-600 dark:text-slate-300 space-y-2 mb-6">
+                            <li>• Built platform to track and analyze multiple social media accounts</li>
+                            <li>• Implemented real-time sentiment analysis and trend detection</li>
+                            <li>• Scalable architecture handling high-volume social data</li>
+                            <li>• Advanced reporting and visualization dashboard</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Elasticsearch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jail Management System -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-emerald-500 to-teal-500 p-6">
+                        <i class="fas fa-shield-alt text-3xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Jail Management System</h3>
+                        <p class="text-emerald-100">Large-scale microservices architecture for corrections</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="text-slate-600 dark:text-slate-300 space-y-2 mb-6">
+                            <li>• Large-scale microservices architecture with Kubernetes</li>
+                            <li>• Comprehensive inmate and facility management features</li>
+                            <li>• Mobile app for staff with offline capabilities</li>
+                            <li>• High security and compliance standards implementation</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">Ruby on Rails</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flight Management System -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6">
+                        <i class="fas fa-plane text-3xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Flight Management System</h3>
+                        <p class="text-blue-100">Uber-like service for private jet scheduling</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="text-slate-600 dark:text-slate-300 space-y-2 mb-6">
+                            <li>• Uber-like service for private jets with real-time scheduling</li>
+                            <li>• Advanced booking system with availability management</li>
+                            <li>• Integrated payment processing and customer management</li>
+                            <li>• Mobile-responsive design for pilots and customers</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">AngularJS</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SASS</span>
+                            <span class="tech-tag">Payment Gateway</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-flex items-center gap-2 bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-eye"></i>
+                    View More Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                    Ready to discuss your next project? Let's connect and explore how I can help bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8">Let's Start a Conversation</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium">Email</div>
+                                <a href="mailto:mfahadaz1@gmail.com" class="text-primary hover:text-blue-700">mfahadaz1@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium">Phone</div>
+                                <a href="tel:+14376604498" class="text-primary hover:text-blue-700">(+1) 437 660 4498</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="fab fa-linkedin text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium">LinkedIn</div>
+                                <a href="#" class="text-primary hover:text-blue-700">Connect with me</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="fab fa-github text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium">GitHub</div>
+                                <a href="#" class="text-primary hover:text-blue-700">View my repositories</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-slate-50 dark:bg-slate-700 rounded-lg">
+                        <h4 class="font-semibold mb-3">Current Availability</h4>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4">
+                            I'm currently available for freelance projects and full-time opportunities. 
+                            Feel free to reach out to discuss your requirements.
+                        </p>
+                        <div class="flex items-center gap-2 text-emerald-600">
+                            <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
+                            <span class="text-sm font-medium">Available for new projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form class="space-y-6">
+                        <!-- @STATE: formData object with name, email, subject, message fields -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" data-mock="true" placeholder="Your Name" 
+                                       class="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" data-mock="true" placeholder="your@email.com" 
+                                       class="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" data-mock="true" placeholder="Project Discussion" 
+                                   class="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="6" data-mock="true" 
+                                      placeholder="Tell me about your project requirements..."
+                                      class="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" data-event="click:handleContactSubmit" data-implementation="Should validate form and send email"
+                                class="w-full bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Muhammad Fahad Azhar</h3>
+                    <p class="text-slate-400 mb-4">
+                        Senior Full-Stack & AI Engineer with 8+ years of experience building scalable solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:mfahadaz1@gmail.com" class="text-slate-400 hover:text-white transition-colors">
+                            <i class="fab fa-envelope text-xl"></i>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <nav class="space-y-2">
+                        <a href="#about" class="block text-slate-400 hover:text-white transition-colors">About</a>
+                        <a href="#skills" class="block text-slate-400 hover:text-white transition-colors">Skills</a>
+                        <a href="#experience" class="block text-slate-400 hover:text-white transition-colors">Experience</a>
+                        <a href="#projects" class="block text-slate-400 hover:text-white transition-colors">Projects</a>
+                        <a href="#contact" class="block text-slate-400 hover:text-white transition-colors">Contact</a>
+                    </nav>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Education</h4>
+                    <div class="text-slate-400">
+                        <div class="font-medium">BS in Computer Science</div>
+                        <div>University of Karachi, 2016</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
+                <p>&copy; 2024 Muhammad Fahad Azhar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .nav-link {
+            @apply text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors;
+        }
+        
+        .skill-tag {
+            @apply px-3 py-1 rounded-full text-sm font-medium;
+        }
+        
+        .tech-tag {
+            @apply px-2 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs rounded;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <script>
+        (function() {
+            // Theme toggle functionality
+            const themeToggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+            
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                html.classList.toggle('dark', savedTheme === 'dark');
+            } else {
+                // Default to system preference
+                const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                html.classList.toggle('dark', systemPrefersDark);
+            }
+            
+            themeToggle.addEventListener('click', function() {
+                html.classList.toggle('dark');
+                const isDark = html.classList.contains('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Contact form handling
+            const contactForm = document.querySelector('form');
+            contactForm?.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // TODO: Implement form submission logic
+                alert('Thank you for your message! I\'ll get back to you soon.');
+            });
+
+            // Add scroll effect to navigation
+            let lastScrollY = window.scrollY;
+            const nav = document.querySelector('nav');
+            
+            window.addEventListener('scroll', function() {
+                const currentScrollY = window.scrollY;
+                
+                if (currentScrollY > 100) {
+                    nav.classList.add('bg-white/95', 'dark:bg-slate-900/95');
+                } else {
+                    nav.classList.remove('bg-white/95', 'dark:bg-slate-900/95');
+                }
+                
+                lastScrollY = currentScrollY;
+            });
+        })();
+    </script>
+</body>
+</html>

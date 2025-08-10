@@ -1,0 +1,146 @@
+MUHAMMAD FAHAD AZHAR
+
+
+Senior Full-Stack & AI Engineer
+📧 mfahadaz1@gmail.com | 📱 (+1) 437 660 4498 | [LinkedIn] | [GitHub]
+
+
+---
+
+Summary
+
+
+Senior Software Engineer with 8+ years of experience delivering scalable, secure, and high-performance web and mobile applications for clients across the USA, Australia, Germany, and beyond.
+Specialized in React, React Native, Node.js, Python, AWS, and AI/ML integrations, with a proven track record of taking products from concept to production.
+Expert in LLM integration (LLaMA, DeepSeek, GPT APIs), RAG pipelines, fine-tuning models, and cloud-native architectures. Adept at collaborating with cross-functional teams, leading development efforts, and delivering mission-critical solutions.
+
+
+---
+
+Core Skills
+
+
+Frontend: React, React Native, AngularJS, Ionic, Next.js, Redux, Redux-Saga, MobX, Material UI, Ant Design, Bootstrap, SASS, styled-components
+Backend: Node.js, Express, NestJS, Koa, Python (Flask, Django, FastAPI), GraphQL, REST APIs
+AI/ML: GPT API integration, LLaMA, DeepSeek, LangGraph, RAG pipelines, fine-tuning LLMs, automated retraining, embedding pipelines, MCP integration with app functionalities
+Databases: PostgreSQL, MySQL, SQLite, MongoDB, DynamoDB, Redis, Memcached, OpenSearch, Pinecone, Amazon Neptune
+Cloud & DevOps: AWS (EC2, S3, Lambda, ECS, Redshift), Google Cloud, Docker, Jenkins, Nginx, PM2, CI/CD (GitLab, GitHub Actions)
+Testing: Jest, Cucumber, React Testing Library, Selenium, Webdriver.io
+Other Tools: Jira, Trello, Webpack, Git, New Relic
+
+
+---
+
+Professional Experience
+
+EventMobi – Senior Software Engineer
+
+
+Nov 2020 – Present
+
+
+- Lead frontend development for large-scale event management platforms using ReactJS and Ionic.
+- Integrated real-time features and optimized performance for high-traffic events.
+- Collaborated directly with clients to refine requirements and deliver tailored solutions.
+- Implemented AI-driven features for event personalization and analytics.
+
+---
+
+10Pearls – Senior Software Engineer
+
+
+Oct 2017 – Nov 2020
+
+
+- Migrated legacy systems to ReactJS, improving performance by 2x.
+- Designed microservice-based architectures for social media monitoring and jail management systems.
+- Led a cross-border team of 3 developers, ensuring timely delivery of mission-critical features.
+- Integrated AI-powered analytics for social media sentiment tracking.
+
+---
+
+VentureDive – Software Engineer
+
+
+Feb 2017 – Oct 2017
+
+
+- Introduced unit/integration testing strategies, reducing recurring bugs by 15%.
+- Guided developers on modern JavaScript trends and best practices.
+- Collaborated with clients to design optimal technical solutions.
+
+---
+
+Codenvoi – Software Engineer / Co-Founder
+
+
+Sep 2014 – Dec 2016
+
+
+- Managed client projects end-to-end, from requirements to deployment.
+- Trained interns in JavaScript and modern web development.
+- Delivered multiple React and Node.js-based applications for international clients.
+
+---
+
+Selected Projects
+
+
+AI-Powered Customer Service Platform
+
+
+- Integrated GPT APIs and on-device AI into a React Native app for real-time customer support.
+- Built automated RAG pipelines with recursive fine-tuning triggered by database updates.
+- Used MCP to connect AI with existing app functionalities.
+Social Media Monitoring
+
+
+- Built a platform to track and analyze multiple social media accounts.
+- Stack: AWS, Node.js, React, ECS, Elasticsearch.
+Jail Management System
+
+
+- Large-scale microservices architecture with Kubernetes and Docker.
+- Stack: Ruby on Rails, React, React Native.
+Energy Monitor System
+
+
+- IoT integration with Raspberry Pi and real-time reporting via Socket.io.
+- Stack: Python, Node.js, Angular, Ionic.
+Investment Info Application
+
+
+- Cross-platform app for investment policy information and calculators.
+- Stack: Angular, Ionic, Node.js.
+Flight Management System
+
+
+- Uber-like service for private jets with scheduling, booking, and availability features.
+- Stack: AngularJS, Python, SASS.
+Idea Match Social App
+
+
+- Social platform for idea sharing and collaboration with chat features.
+- Stack: ReactJS (Redux), Ionic, Node.js.
+Etisalat Network Health Dashboard
+
+
+- Custom React Native dashboard with MobX state management.
+- Stack: Node.js, React Native.
+
+---
+
+Education
+
+
+BS in Computer Science – University of Karachi, 2016
+
+
+---
+
+Notable Strengths
+
+- Proven ability to scale applications to handle high concurrent usage (50k+ MAU).
+- Strong UI/UX execution with attention to detail.
+- Experience in subscription monetization, referral systems, and analytics integration.
+- Skilled in performance optimization and security best practices for production systems.
