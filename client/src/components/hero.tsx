@@ -74,16 +74,20 @@ const Hero = () => {
               <Phone className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/muhammadfahadazhar/"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="link-linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://github.com/mfahad1"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="link-github"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Github className="w-6 h-6" />
             </a>
