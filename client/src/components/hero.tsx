@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="mb-8">
             {/* Professional Avatar */}
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-accent mx-auto mb-6 flex items-center justify-center overflow-hidden">
-              <img src={"/cv/src/resources/LinkedInProfilePicture.png"} alt="Profile" className="w-full h-full object-cover rounded-full" />
+              <img src={"/cv/resources/LinkedInProfilePicture.png"} alt="Profile" className="w-full h-full object-cover rounded-full" />
             </div>
           </div>
 
@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-xl sm:text-2xl lg:text-3xl text-secondary dark:text-muted-foreground mb-8">
-            Senior Full-Stack & AI Engineer
+            Senior Full-Stack
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
