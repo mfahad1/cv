@@ -26,7 +26,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-semibold mb-8">Let's Start a Conversation</h3>
-            
+
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
@@ -74,8 +74,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-medium">Email</div>
-                  <a 
-                    href="mailto:mfahadaz1@gmail.com" 
+                  <a
+                    href="mailto:mfahadaz1@gmail.com"
                     className="text-primary hover:text-primary/80 transition-colors"
                     data-testid="link-contact-email"
                   >
@@ -83,15 +83,15 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <Phone className="text-primary w-5 h-5" />
                 </div>
                 <div>
                   <div className="font-medium">Phone</div>
-                  <a 
-                    href="tel:+14376604498" 
+                  <a
+                    href="tel:+14376604498"
                     className="text-primary hover:text-primary/80 transition-colors"
                     data-testid="link-contact-phone"
                   >
@@ -99,33 +99,37 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <Linkedin className="text-primary w-5 h-5" />
                 </div>
                 <div>
                   <div className="font-medium">LinkedIn</div>
-                  <a 
-                    href="#" 
+                  <a
+                    href="https://www.linkedin.com/in/muhammadfahadazhar/"
                     className="text-primary hover:text-primary/80 transition-colors"
                     data-testid="link-contact-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Connect with me
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <Github className="text-primary w-5 h-5" />
                 </div>
                 <div>
                   <div className="font-medium">GitHub</div>
-                  <a 
-                    href="#" 
+                  <a
+                    href="https://github.com/mfahad1"
                     className="text-primary hover:text-primary/80 transition-colors"
                     data-testid="link-contact-github"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View my repositories
                   </a>
@@ -137,7 +141,7 @@ const Contact = () => {
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Current Availability</h4>
                 <p className="text-muted-foreground mb-4">
-                  I'm currently available for freelance projects and full-time opportunities. 
+                  I'm currently available for freelance projects and full-time opportunities.
                   Feel free to reach out to discuss your requirements.
                 </p>
                 <div className="flex items-center gap-2 text-emerald-600">
@@ -183,7 +187,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="subject">Subject</Label>
                     <Input
@@ -197,7 +201,7 @@ const Contact = () => {
                       className="mt-2"
                     />
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="message">Message *</Label>
                     <Textarea
@@ -211,9 +215,9 @@ const Contact = () => {
                       className="mt-2 resize-none"
                     />
                   </div>
-                  
-                  <Button 
-                    type="submit" 
+
+                  <Button
+                    type="submit"
                     className="w-full flex items-center justify-center gap-2"
                     data-testid="button-send-message"
                   >
